@@ -1,0 +1,14 @@
+name: http-client
+display-name: Reql Client
+summary: Test client for RethinkDB charm
+maintainer: John Doe <johndoe@emailprovider.com>
+description: |
+  Test client for RethinkDB charm
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+requires:
+  http:
+    interface: http

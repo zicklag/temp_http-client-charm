@@ -1,0 +1,10 @@
+# This allows you to set which of your scripts to run and in what order when
+# hooks are triggered.
+use-docker: false
+hooks:
+  install:
+    - host-script: update.sh
+  http-relation-changed:
+    - host-script: update.sh
+  http-relation-broken:
+    - host-script: update.sh
